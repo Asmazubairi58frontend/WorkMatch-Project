@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="icon/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url(photoss/white.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+
+        /* Transparent navbar initially */
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        .navbar.scrolled a {
+            color: black;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .logoo {
+            width: 120px;
+            height: 50px;
+        }
+
+
+        /* header-part */
+        .head {
+            margin-top: 120px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        /* body-part */
+        .condide {
+            margin-top: 120px;
+        }
+
+        .condide img {
+            width: 150px;
+            height: 160px;
+        }
+
+        .condide .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .form-check-input:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        /* footer-part */
+        .footer {
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+
+        }
+
+        .footer h4 {
+            margin-top: 20px;
+            color: black;
+            text-shadow: 2px 2px 3px white;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .footer a:hover {
+            border-left: 2px solid white;
+            padding: 4px;
+        }
+
+        .secound {
+            border-bottom: 2px solid white;
+        }
+
+        .final-row a {
+            color: white;
+        }
+
+        .final-row a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer .title {
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .finaly {
+            text-shadow: 2px 2px 3px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav-part -->
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photoss/workk.png" alt="logo" class="img-fluid  logoo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Normal links -->
+                    <li class="nav-item"><a class="nav-link" href="project 1.html">Home</a></li>
+                    <!-- Dropdowns -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Find Job</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="project 2.html">Job Listing</a></li>
+                            <li><a class="dropdown-item" href="project 3.html">Job Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Employers</a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="project 4.html">Employers List</a></li>
+                            <li><a class="dropdown-item" href="project 5.html">Employers Single</a></li>
+                            <li><a class="dropdown-item" href="project 6.html">Faq's</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Candidates</a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item" href="project 7.html">Candidates List</a></li>
+                            <li><a class="dropdown-item" href="project 8.html">Candidates Single</a></li>
+                            <li><a class="dropdown-item" href="project 9.html">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="project 10.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="project 11.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="project 12.html"> Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 13.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 14.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- head-part -->
+    <section>
+        <div class="container shadow head">
+            <div class="row text-center text-light">
+                <h1 class="mt-3" data-aos="fade-up" data-aos-delay="200">Condidates-Section</h1>
+                <p data-aos="fade-up" data-aos-delay="400">Home/Condidates</p>
+            </div>
+        </div>
+    </section>
+    <!-- body-part -->
+    <section>
+        <div class="container-fluid condide">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card shadow px-5 mt-3">
+                        <label for="ww" class="form-label mt-5" data-aos="fade-up" data-aos-delay="200"> Search by
+                            keywords</label>
+                        <input type="text" class="form-control p-3" id="ww" placeholder=" Title , Keywords Or  Company "
+                            data-aos="fade-up" data-aos-delay="300">
+
+                        <label for="ww" class="form-label mt-3" data-aos="fade-up" data-aos-delay="200">
+                            Location</label>
+                        <input type="text" class="form-control p-3" id="ww" placeholder=" City or postcode "
+                            data-aos="fade-up" data-aos-delay="300">
+
+
+
+                        <!-- Input with Dropdown -->
+                        <label for="ww" class="form-label mt-3" data-aos="fade-up" data-aos-delay="200">
+                            Category</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder=" Choose a Category" data-aos="fade-up"
+                                data-aos-delay="300">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-aos="fade-up" data-aos-delay="400">
+                                Options
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"> Accounting</a></li>
+                                <li><a class="dropdown-item" href="#">Developer</a></li>
+                                <li><a class="dropdown-item" href="#">Sles person</a></li>
+                            </ul>
+                        </div>
+
+                        <label for="ww" class="form-label mt-3" data-aos="fade-up" data-aos-delay="200"> Condidate
+                            Gender</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder=" Choose a Category" data-aos="fade-up"
+                                data-aos-delay="300">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-aos="fade-up" data-aos-delay="400">
+                                Male
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"> MAle</a></li>
+                                <li><a class="dropdown-item" href="#">Female</a></li>
+                                <li><a class="dropdown-item" href="#">Others</a></li>
+                            </ul>
+                        </div>
+                        <form>
+                            <p class="mt-5" data-aos="fade-up" data-aos-delay="200">Date Posted</p>
+                            <div>
+                                <input type="radio" id="option1" name="choices" value="Option 1" data-aos="fade-up"
+                                    data-aos-delay="300">
+                                <label for="option1" data-aos="fade-up" data-aos-delay="300">All</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="option2" name="choices" value="Option 2" data-aos="fade-up"
+                                    data-aos-delay="400">
+                                <label for="option2" data-aos="fade-up" data-aos-delay="400">Last 24 hour</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="option3" name="choices" value="Option 3" data-aos="fade-up"
+                                    data-aos-delay="500">
+                                <label for="option3" data-aos="fade-up" data-aos-delay="500">Last 7 Days</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="option4" name="choices" value="Option 4" data-aos="fade-up"
+                                    data-aos-delay="600">
+                                <label for="option4" data-aos="fade-up" data-aos-delay="600">Last 24 Days</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="option5" name="choices" value="Option 5" data-aos="fade-up"
+                                    data-aos-delay="700">
+                                <label for="option5" data-aos="fade-up" data-aos-delay="700">Last 30 Days</label>
+                            </div>
+                        </form>
+
+                        <div>
+                            <p class="mt-5" data-aos="fade-up" data-aos-delay="200">Qualification</p>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch1" data-aos="fade-up"
+                                    data-aos-delay="300">
+                                <label class="form-check-label" for="switch1" data-aos="fade-up" data-aos-delay="300">
+                                    Certificate</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch2" data-aos="fade-up"
+                                    data-aos-delay="400">
+                                <label class="form-check-label" for="switch2" data-aos="fade-up"
+                                    data-aos-delay="400">Associate Degree</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch3" data-aos="fade-up"
+                                    data-aos-delay="500">
+                                <label class="form-check-label" for="switch3" data-aos="fade-up"
+                                    data-aos-delay="500">Bachelor Degree</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch4" data-aos="fade-up"
+                                    data-aos-delay="600">
+                                <label class="form-check-label" for="switch4" data-aos="fade-up"
+                                    data-aos-delay="600">Master’s Degree</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch4" data-aos="fade-up"
+                                    data-aos-delay="700">
+                                <label class="form-check-label" for="switch4" data-aos="fade-up"
+                                    data-aos-delay="700">Doctorate Degree</label>
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            <p class="mt-5" data-aos="fade-up" data-aos-delay="200">experience</p>
+
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="switch1" data-aos="fade-up"
+                                    data-aos-delay="300">
+                                <label class="form-check-label" for="switch1" data-aos="fade-up" data-aos-delay="300">
+                                    First</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch2" data-aos="fade-up"
+                                    data-aos-delay="400">
+                                <label class="form-check-label" for="switch2" data-aos="fade-up" data-aos-delay="400">1
+                                    Year</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch3" data-aos="fade-up"
+                                    data-aos-delay="500">
+                                <label class="form-check-label" for="switch3" data-aos="fade-up" data-aos-delay="500">2
+                                    Year</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="switch4" data-aos="fade-up"
+                                    data-aos-delay="600">
+                                <label class="form-check-label" for="switch4" data-aos="fade-up" data-aos-delay="600">3
+                                    Year</label>
+                            </div>
+
+                            <div class="form-check form-switch mb-4">
+                                <input class="form-check-input" type="checkbox" id="switch4" data-aos="fade-up"
+                                    data-aos-delay="700">
+                                <label class="form-check-label" for="switch4" data-aos="fade-up" data-aos-delay="700">4
+                                    Year</label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 text-light">
+
+                    <div class="card p-3  shadow mt-3">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                <img src="photoss/c2.jpg" class=" img-fluid rounded-circle" alt="Rounded Image"
+                                    data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Darlene Robertson
+                                </h3>
+                                <div class="d-flex justify-content-center justify-content-md-center gap-4 flex-wrap">
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="fa fa-money-bill-wave fa-2x text-light"></i>
+                                        <div>99$/hour</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                                        <i class="fa fa-map-marker-alt fa-2x text-light"></i>
+                                        <div>Location</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                                        <i class="fa fa-briefcase fa-2x text-light"></i>
+                                        <div>Ul developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center text-md-end">
+                                <button class="btn btn-primary w-100 w-md-auto" data-aos="fade-up"
+                                    data-aos-delay="700">View profile</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow  p-3 mt-3">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                <img src="photoss/fit.jfif" class=" img-fluid rounded-circle" alt="Rounded Image"
+                                    data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Alex Maral</h3>
+                                <div class="d-flex justify-content-center justify-content-md-center gap-4 flex-wrap">
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="fa fa-money-bill-wave fa-2x text-light"></i>
+                                        <div>100$/hour</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                                        <i class="fa fa-map-marker-alt fa-2x text-light"></i>
+                                        <div>Location</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                                        <i class="fa fa-briefcase fa-2x text-light"></i>
+                                        <div>Developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center text-md-end">
+                                <button class="btn btn-primary w-100 w-md-auto" data-aos="fade-up"
+                                    data-aos-delay="700">View profile</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shadow  p-3 mt-3">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                <img src="photoss/gl.jpg" class=" img-fluid rounded-circle" alt="Rounded Image"
+                                    data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Leslie Alexander
+                                </h3>
+                                <div class="d-flex justify-content-center justify-content-md-center gap-4 flex-wrap">
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="fa fa-money-bill-wave fa-2x text-light"></i>
+                                        <div>90$/hour</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                                        <i class="fa fa-map-marker-alt fa-2x text-light"></i>
+                                        <div>Location</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                                        <i class="fa fa-briefcase fa-2x text-light"></i>
+                                        <div>Marketing</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center text-md-end">
+                                <button class="btn btn-primary w-100 w-md-auto" data-aos="fade-up"
+                                    data-aos-delay="700">View profile</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-3  shadow mt-3">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                <img src="photoss/care.jfif" class=" img-fluid rounded-circle" alt="Rounded Image"
+                                    data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Darlene Robertson
+                                </h3>
+                                <div class="d-flex justify-content-center justify-content-md-center gap-4 flex-wrap">
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="fa fa-money-bill-wave fa-2x text-light"></i>
+                                        <div>99$/hour</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                                        <i class="fa fa-map-marker-alt fa-2x text-light"></i>
+                                        <div>Location</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                                        <i class="fa fa-briefcase fa-2x text-light"></i>
+                                        <div>Ul developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center text-md-end">
+                                <button class="btn btn-primary w-100 w-md-auto" data-aos="fade-up"
+                                    data-aos-delay="700">View profile</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card shadow  p-3 mt-3">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                <img src="photoss/c1.jpg" class=" img-fluid rounded-circle" alt="Rounded Image"
+                                    data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Shine Jon</h3>
+                                <div class="d-flex justify-content-center justify-content-md-center gap-4 flex-wrap">
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="fa fa-money-bill-wave fa-2x text-light"></i>
+                                        <div>86$/hour</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                                        <i class="fa fa-map-marker-alt fa-2x text-light"></i>
+                                        <div>Location</div>
+                                    </div>
+                                    <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                                        <i class="fa fa-briefcase fa-2x text-light"></i>
+                                        <div>Frontend de..</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center text-md-end">
+                                <button class="btn btn-primary w-100 w-md-auto" data-aos="fade-up"
+                                    data-aos-delay="700">View profile</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- footer-part -->
+    <section>
+        <div class="container-fluid footer">
+            <h2 class="text-center text-light py-5 title" data-aos="fade-up" data-aos-delay="200"> <i
+                    class="fas fa-globe"></i>Join Us Wherever You Are </h2>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 1.html"> Home</a>
+                    <a class="d-block" href="project 2.html"> Job List</a>
+                    <a class="d-block" href="project 3.html">Job Single </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 4.html">Employers List </a>
+                    <a class="d-block" href="project 5.html">Employers Single </a>
+                    <a class="d-block" href="project 6.html">Faq's</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 7.html">Candidates List</a>
+                    <a class="d-block" href="project 8.html">Candidates Single </a>
+                    <a class="d-block" href="project 9.html">About</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 10.html"> Blog</a>
+                    <a class="d-block" href="project 11.html">Blog Details </a>
+                    <a class="d-block" href="project 12.html">Terms </a>
+
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 13.html">Pricing</a>
+                    <a class="d-block" href="project 14.html">Contact</a>
+                    <a href="#"> <i class="fa fa-phone"></i> Contact Us </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Contact</h4>
+                    <a class="d-block" href="#"><i class="fa fa-envelope"></i> Email Us</a>
+                    <a class="d-block" href="#"><i class="fa fa-map-marker-alt"></i> Location</a>
+                    <a class="d-block" href="#"><i class="fab fa-apple"></i>Download on the apple store </a>
+                </div>
+            </div>
+            <div class="row final-row">
+                <div class="secound"></div>
+                <div class="col-8">
+                    <p class="mt-3 text-light finaly"> &copy; 2025 Work_Match Designed By " Asma Sadat Zubairi_Frontend
+                        Developer ". </p>
+                </div>
+                <div class="col-4">
+                    <a href="#"> <i class="fab fa-linkedin mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-instagram mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-facebook  mt-3 m-3"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

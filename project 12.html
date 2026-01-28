@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="icon/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url(photoss/white.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+
+        /* Transparent navbar initially */
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        .navbar.scrolled a {
+            color: black;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon{
+            filter: invert(1);
+        }
+
+        .logoo {
+            width: 120px;
+            height: 50px;
+        }
+
+
+        /* body-part */
+        .terms-text {
+            margin-top: 150px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .terms-text h3 {
+            background-color: white;
+        }
+
+        /* footer-part */
+        .footer {
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+
+        }
+
+        .footer h4 {
+            margin-top: 20px;
+            color: black;
+            text-shadow: 2px 2px 3px white;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .footer a:hover {
+            border-left: 2px solid white;
+            padding: 4px;
+        }
+
+        .secoundd {
+            border-bottom: 2px solid white;
+        }
+
+        .final-row a {
+            color: white;
+        }
+
+        .final-row a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer .title {
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .finaly {
+            text-shadow: 2px 2px 3px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav-part -->
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photoss/workk.png" alt="logo" class="img-fluid logoo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Normal links -->
+                    <li class="nav-item"><a class="nav-link" href="project 1.html">Home</a></li>
+                    <!-- Dropdowns -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Find Job</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="project 2.html">Job Listing</a></li>
+                            <li><a class="dropdown-item" href="project 3.html">Job Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Employers</a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="project 4.html">Employers List</a></li>
+                            <li><a class="dropdown-item" href="project 5.html">Employers Single</a></li>
+                            <li><a class="dropdown-item" href="project 6.html">Faq's</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Candidates</a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item" href="project 7.html">Candidates List</a></li>
+                            <li><a class="dropdown-item" href="project 8.html">Candidates Single</a></li>
+                            <li><a class="dropdown-item" href="project 9.html">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="project 10.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="project 11.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="project 12.html"> Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 13.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 14.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- body-part -->
+    <section>
+        <div class="container">
+            <div class="row terms-text shadow">
+                <h2 class="text-center mt-5" data-aos="zoom-out" data-aos-delay="200">Terms and Conditions</h2>
+                <p class="text-center" data-aos="zoom-out" data-aos-delay="400">Home / Terms and Conditions</p>
+                <div class="text-start mt-5">
+                    <h3 class="mt-5 shadow" data-aos="zoom-out" data-aos-delay="500">1. Terms</h3>
+                    <p class="mb-5 px-5 mt-5">By accessing this website, you agree to be bound by its Terms of Use,
+                        which
+                        require lawful
+                        purposes only, restrict usage to individuals over 18, demand accurate account information, and
+                        emphasize confidentiality of login details, while reserving the site’s right to refuse service,
+                        protect intellectual property, and enforce updated terms through continued use</p>
+
+                    <h3 class="mt-5 shadow" data-aos="zoom-out" data-aos-delay="400">2. Limitations</h3>
+                    <p class="mb-5 px-5 mt-5">The site disclaims liability for damages arising from use, places full
+                        responsibility on users
+                        for their actions, does not guarantee uninterrupted or error-free operation, warns that reliance
+                        on information is at the user’s risk, excludes responsibility for third-party content, applies
+                        limitations to both direct and indirect damages, denies liability for data or profit loss,
+                        requires compliance with laws, and maintains these limitations even if remedies fail.</p>
+
+                    <h3 class="mt-5 shadow" data-aos="zoom-out" data-aos-delay="600">3. Revisions and Errata</h3>
+                    <p class="mb-5 px-5 mt-5">The site’s content may contain technical, typographical, or photographic
+                        errors, does not
+                        guarantee accuracy or completeness, may change materials at any time without notice, updates may
+                        correct mistakes or improve clarity, users are advised to verify information before relying on
+                        it, the site is not obligated to update regularly, corrections do not imply liability for past
+                        inaccuracies, revisions may alter terms or service descriptions, and continued use signifies
+                        acceptance of changes.</p>
+
+
+                    <h3 class="mt-5 shadow" data-aos="zoom-out" data-aos-delay="800">4. Site Terms of Use Modifications
+                    </h3>
+                    <p class="mb-5 px-5 mt-5">The site may revise its Terms of Use at any time, with modifications
+                        effective
+                        immediately upon
+                        posting, requiring users to review terms periodically, treating continued use as agreement,
+                        announcing major changes when necessary, reserving the right to enforce terms retroactively,
+                        warning that non-compliance may result in suspension, applying modifications to all users
+                        equally, and confirming that the latest version overrides all previous ones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-part -->
+    <section>
+        <div class="container-fluid footer shadow">
+            <h2 class="text-center text-light py-5 title" data-aos="zoom-out" data-aos-delay="400"> <i
+                    class="fas fa-globe"></i>Join Us Wherever You Are </h2>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 1.html"> Home</a>
+                    <a class="d-block" href="project 2.html"> Job List</a>
+                    <a class="d-block" href="project 3.html">Job Single </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 4.html">Employers List </a>
+                    <a class="d-block" href="project 5.html">Employers Single </a>
+                    <a class="d-block" href="project 6.html">Faq's</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 7.html">Candidates List</a>
+                    <a class="d-block" href="project 8.html">Candidates Single </a>
+                    <a class="d-block" href="project 9.html">About</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 10.html"> Blog</a>
+                    <a class="d-block" href="project 11.html">Blog Details </a>
+                    <a class="d-block" href="project 12.html">Terms </a>
+
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 13.html">Pricing</a>
+                    <a class="d-block" href="project 14.html">Contact</a>
+                    <a href="#"> <i class="fa fa-phone"></i> Contact Us </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Contact</h4>
+                    <a class="d-block" href="#"><i class="fa fa-envelope"></i> Email Us</a>
+                    <a class="d-block" href="#"><i class="fa fa-map-marker-alt"></i> Location</a>
+                    <a class="d-block" href="#"><i class="fab fa-apple"></i>Download on the apple store </a>
+                </div>
+            </div>
+            <div class="row final-row">
+                <div class="secoundd"></div>
+                <div class="col-8">
+                    <p class="mt-3 text-light finaly"> &copy; 2025 Work_Match Designed By " Asma Sadat Zubairi_Frontend
+                        Developer ". </p>
+                </div>
+                <div class="col-4">
+                    <a href="#"> <i class="fab fa-linkedin mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-instagram mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-facebook  mt-3 m-3"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

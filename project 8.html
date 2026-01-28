@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="icon/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url(photoss/white.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+
+        /* Transparent navbar initially */
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 3px black;
+        }
+
+        .navbar.scrolled a {
+            color: black;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .logoo {
+            width: 120px;
+            height: 50px;
+        }
+
+
+        /* header-part */
+        .head-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+
+        .headd {
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        @media (max-width:768px) {
+            .first {
+                display: none !important;
+            }
+        }
+
+        @media (min-width:768px) and (max-width: 991px) {
+            .first {
+                display: none !important;
+            }
+        }
+
+        @media (max-width:768px) {
+            .secound {
+                display: none !important;
+            }
+        }
+
+        @media (min-width:768px) and (max-width: 991px) {
+            .secound {
+                display: none !important;
+            }
+        }
+
+        /* body-part */
+        .saide {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .saide a {
+            text-decoration: none;
+        }
+
+        .about {
+            margin-top: 100px;
+        }
+
+        .img-part img {
+            width: 200px;
+            height: 190px;
+            border-radius: 7px;
+            margin-top: 30px;
+        }
+
+        .img-part img:hover {
+            transform: scale(1.2);
+            border: 2px solid white;
+        }
+
+        .img-part {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .social {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .sociall {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .text1 {
+            border-left: 3px dotted rgb(30, 54, 236);
+            padding: 6px;
+        }
+
+        .text2 {
+            border-left: 3px dotted white;
+            padding: 6px;
+        }
+
+        /* footer-part */
+        .footer {
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+
+        }
+
+        .footer h4 {
+            margin-top: 20px;
+            color: black;
+            text-shadow: 2px 2px 3px white;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .footer a:hover {
+            border-left: 2px solid white;
+            padding: 4px;
+        }
+
+        .secoundd {
+            border-bottom: 2px solid white;
+        }
+
+        .final-row a {
+            color: white;
+        }
+
+        .final-row a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer .title {
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .finaly {
+            text-shadow: 2px 2px 3px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- nav-part -->
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photoss/workk.png" alt="logo" class="img-fluid  logoo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Normal links -->
+                    <li class="nav-item"><a class="nav-link" href="project 1.html">Home</a></li>
+                    <!-- Dropdowns -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Find Job</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="project 2.html">Job Listing</a></li>
+                            <li><a class="dropdown-item" href="project 3.html">Job Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Employers</a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="project 4.html">Employers List</a></li>
+                            <li><a class="dropdown-item" href="project 5.html">Employers Single</a></li>
+                            <li><a class="dropdown-item" href="project 6.html">Faq's</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Candidates</a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item" href="project 7.html">Candidates List</a></li>
+                            <li><a class="dropdown-item" href="project 8.html">Candidates Single</a></li>
+                            <li><a class="dropdown-item" href="project 9.html">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="project 10.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="project 11.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="project 12.html"> Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 13.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 14.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header-part -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="card shadow headd">
+                        <div class="row align-items-center text-center text-md-start">
+                            <div class="col-3 d-flex flex-column mt-auto">
+                                <div class="d-flex first">
+                                    <a href="#" class="btn btn-primary m-3" data-aos="fade-up" data-aos-delay="200">
+                                        App</a>
+                                    <a href="#" class="btn btn-primary m-3" data-aos="fade-up"
+                                        data-aos-delay="200">Design</a>
+                                    <a href="#" class="btn btn-primary m-3" data-aos="fade-up"
+                                        data-aos-delay="200">Digital</a>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center align-items-center">
+                                <img src="photoss/gl.jpg" alt="photo" class="img-fluid head-img mt-5" data-aos="fade-up"
+                                    data-aos-delay="200">
+                                <h3 data-aos="fade-up" data-aos-delay="200">Leslie Alexander</h3>
+                                <p data-aos="fade-up" data-aos-delay="200">Marketing Expert</p>
+                                <div class="d-flex text-center align-items-center justify-content-center">
+                                    <p data-aos="fade-up" data-aos-delay="200"> <i class="fa fa-map-marker-alt"></i>
+                                        London/UK</p>
+                                    <p data-aos="fade-up" data-aos-delay="200"> <i class="fa fa-money-bill-wave"></i>
+                                        $100/hour</p>
+                                    <p data-aos="fade-up" data-aos-delay="200"> <i class="fa fa-clock"></i>2020</p>
+
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column mt-auto">
+                                <a href="#" class="btn btn-primary m-4 secound" data-aos="fade-up"
+                                    data-aos-delay="200">Download CV </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body-part -->
+    <section>
+        <div class="container-fluid">
+            <div class="row about">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card saide px-4">
+                        <a href="#" class="text-dark"><i
+                                class="fa fa-briefcase fa-2x mt-5  mb-5 text-primary"></i>experience : 5-year </a>
+                        <a href="#" class="text-dark"><i class="fas fa-hourglass fa-2x mb-5 text-primary"></i>Age :
+                            28-30-year </a>
+                        <a href="#" class="text-dark"><i class="fas fa-coins fa-2x mb-5 text-primary"></i>Current Salary
+                            :
+                            11k-15k </a>
+                        <a href="#" class="text-dark"><i
+                                class="fas fa-money-bill-wave fa-2x  mb-5 text-primary"></i>expected-salary :26k-30k
+                        </a>
+                        <a href="#" class="text-dark"><i class="fas fa-language fa-2x mb-5 text-primary"></i>experience
+                            :
+                            5-year </a>
+                        <a href="#" class="text-dark"><i
+                                class="fas fa-graduation-cap fa-2x mb-5 text-primary"></i>Language : English, German
+                            ,Spanish</a>
+                        <a href="#" class="text-dark"><i class="fas fa-user fa-2x mb-5 text-primary"></i>Gander : Female
+                        </a>
+                    </div>
+
+                    <div class="card mt-5 shadow  social">
+                        <h5 class="mt-4 mb-4 text-center">Social media <i class="fab fa-instagram"></i> <i
+                                class="fab fa-facebook"></i> <i class="fab fa-linkedin"></i></h5>
+                    </div>
+
+                    <div class="card p-4 mt-5 shadow sociall">
+                        <h5 class="text-center mb-4">Professional Skills</h5>
+                        <div class="text-dark">
+                            <p class="bg-light mx-3 text-center">App</p>
+                            <p class="bg-light mx-3 text-center">Administrative</p>
+                            <p class="bg-light mx-3 text-center">Android</p>
+                            <p class="bg-light mx-3 text-center">Wordpress</p>
+                            <p class="bg-light mx-3 text-center">React</p>
+                            <p class="bg-light mx-3 text-center">Design</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow form mt-5">
+                        <div class="card-body text-center align-items-center justify-content">
+                            <h2 class="card-title mb-4 mt-4">Contact Form</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control shadow" id="name"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control shadow" id="email"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control shadow" id="message" rows="4"
+                                        placeholder="Write your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary shadow mb-4 mt-4">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-12 img-part">
+                    <h3 class="mt-5 mb-3" data-aos="fade-up" data-aos-delay="200">Condidates About</h3>
+                    <p data-aos="fade-up" data-aos-delay="200">Hello my name is Nicole Wells and web developer from
+                        Portland. In pharetra orci dignissim,
+                        blandit mi semper, ultricies diam. Suspendisse malesuada suscipit nunc non volutpat. Sed porta
+                        nulla id orci laoreet tempor non consequat enim. Sed vitae aliquam velit. Aliquam ante erat,
+                        blandit at pretium et, accumsan ac est. Integer vehicula rhoncus molestie. Morbi ornare ipsum
+                        sed sem condimentum, et pulvinar tortor luctus. Suspendisse condimentum lorem ut elementum
+                        aliquam.
+
+                        Mauris nec erat ut libero vulputate pulvinar. Aliquam ante erat, blandit at pretium et, accumsan
+                        ac est. Integer vehicula rhoncus molestie. Morbi ornare ipsum sed sem condimentum, et pulvinar
+                        tortor luctus. Suspendisse condimentum lorem ut elementum aliquam. Mauris nec erat ut libero
+                        vulputate pulvinar</p>
+
+                    <div class="row text-center justify-content-center align-items-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <img src="photoss/night.jpg" alt="photo" class="img-fluid" data-aos="flip-right"
+                                data-aos-delay="300">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <img src="photoss/gl.jpg" alt="photo" class="img-fluid" data-aos="flip-right"
+                                data-aos-delay="400">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <img src="photoss/room.jpg" alt="photo" class="img-fluid" data-aos="flip-right"
+                                data-aos-delay="500">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <img src="photoss/yellow.jpg" alt="photo" class="img-fluid" data-aos="flip-right"
+                                data-aos-delay="600">
+
+                        </div>
+                    </div>
+
+                    <div class=" mt-5 text1">
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Education</h3>
+                        <h4 data-aos="fade-up" data-aos-delay="300">Bachlors in Fine Arts <a href="#"
+                                class="btn btn-primary">2012-2014</a></h4>
+                        <h5 class="text-primary" data-aos="fade-up" data-aos-delay="400">Modern College</h5>
+                        <p class="mb-4" data-aos="fade-up" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Deserunt perferendis
+                            dolorem eum
+                            cupiditate non laboriosam delectus recusandae nobis, amet explicabo facere error voluptatum
+                            earum tempora repudiandae commodi, optio deleniti dolores?</p>
+
+                        <h4 class="mt-5" data-aos="fade-up" data-aos-delay="600"> Computer Science<a href="#"
+                                class="btn btn-primary">2008 - 2012</a></h4>
+                        <h5 class="text-primary" data-aos="fade-up" data-aos-delay="700">Harvard University</h5>
+                        <p data-aos="fade-up" data-aos-delay="800">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deserunt perferendis dolorem eum
+                            cupiditate non laboriosam delectus recusandae nobis, amet explicabo facere error voluptatum
+                            earum tempora repudiandae commodi, optio deleniti dolores?</p>
+                    </div>
+                    <div class="mt-5 text2">
+                        <h3 data-aos="fade-up" data-aos-delay="200">Work And Experience</h3>
+                        <h4 data-aos="fade-up" data-aos-delay="300">Product Designer <a href="#"
+                                class="btn btn-light">2008 - 201214</a></h4>
+                        <h5 class="text-light" data-aos="fade-up" data-aos-delay="400">Spotify Inc</h5>
+                        <p class="mb-4" data-aos="fade-up" data-aos-delay="500">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Nobis mollitia enim
+                            vero debitis
+                            labore! Explicabo doloribus possimus ab tempore voluptatem deserunt illo enim eum veritatis
+                            id. Dolorum maiores non debitis.</p>
+
+                        <h4 class="mt-5" data-aos="fade-up" data-aos-delay="600"> Sr UX Engineer <a href="#"
+                                class="btn btn-light">2012 - 2014</a></h4>
+                        <h5 class="text-light" data-aos="fade-up" data-aos-delay="700">Dropbox Inc.</h5>
+                        <p data-aos="fade-up" data-aos-delay="800">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Minus sint reiciendis eligendi
+                            culpa corrupti, eius optio fuga voluptatum molestiae at laudantium? Autem ad exercitationem
+                            assumenda architecto sit impedit, hic id!</p>
+                    </div>
+                    <div class="mt-5 text1">
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Awards</h3>
+                        <h4 data-aos="fade-up" data-aos-delay="300"> Perfect Attendance Programs <a href="#"
+                                class="btn btn-primary">2008 - 2014</a></h4>
+                        <h5 class="text-primary" data-aos="fade-up" data-aos-delay="400">Software Algorithm</h5>
+                        <p class="mb-4" data-aos="fade-up" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Deserunt perferendis
+                            dolorem eum
+                            cupiditate non laboriosam delectus recusandae nobis, amet explicabo facere error voluptatum
+                            earum tempora repudiandae commodi, optio deleniti dolores?</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-part -->
+    <section>
+        <div class="container-fluid footer">
+            <h2 class="text-center text-light py-5 title" data-aos="fade-up" data-aos-delay="200"> <i
+                    class="fas fa-globe"></i>Join Us Wherever You Are </h2>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 1.html"> Home</a>
+                    <a class="d-block" href="project 2.html"> Job List</a>
+                    <a class="d-block" href="project 3.html">Job Single </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 4.html">Employers List </a>
+                    <a class="d-block" href="project 5.html">Employers Single </a>
+                    <a class="d-block" href="project 6.html">Faq's</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 7.html">Candidates List</a>
+                    <a class="d-block" href="project 8.html">Candidates Single </a>
+                    <a class="d-block" href="project 9.html">About</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 10.html"> Blog</a>
+                    <a class="d-block" href="project 11.html">Blog Details </a>
+                    <a class="d-block" href="project 12.html">Terms </a>
+
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 13.html">Pricing</a>
+                    <a class="d-block" href="project 14.html">Contact</a>
+                    <a href="#"> <i class="fa fa-phone"></i> Contact Us </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Contact</h4>
+                    <a class="d-block" href="#"><i class="fa fa-envelope"></i> Email Us</a>
+                    <a class="d-block" href="#"><i class="fa fa-map-marker-alt"></i> Location</a>
+                    <a class="d-block" href="#"><i class="fab fa-apple"></i>Download on the apple store </a>
+                </div>
+            </div>
+            <div class="row final-row">
+                <div class="secoundd"></div>
+                <div class="col-8">
+                    <p class="mt-3 text-light finaly"> &copy; 2025 Work_Match Designed By " Asma Sadat Zubairi_Frontend
+                        Developer ". </p>
+                </div>
+                <div class="col-4">
+                    <a href="#"> <i class="fab fa-linkedin mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-instagram mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-facebook  mt-3 m-3"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

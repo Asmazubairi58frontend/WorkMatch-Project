@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="icon/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url(photoss/black.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+
+        /* Transparent navbar initially */
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: white;
+            color: black;
+        }
+
+        .navbar.scrolled a {
+            color: black;
+        }
+
+        .navbar.scrolled .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .logoo {
+            width: 120px;
+            height: 50px;
+        }
+
+
+        /* header-part */
+        .company {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .head-text {
+            margin-top: 140px;
+
+        }
+
+        /* body-part */
+        .icon-btn {
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
+
+        .icon-label {
+            font-size: 0.95rem;
+        }
+
+        .jobs {
+            margin-top: 90px;
+        }
+
+        .jobs .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        .jobs .card:hover {
+            transform: scale(0.9);
+            border: 3px solid white;
+
+        }
+
+        /* footer-part */
+        .footer {
+            margin-top: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+
+        }
+
+        .footer h4 {
+            margin-top: 20px;
+            color: rgb(22, 123, 246);
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer a:hover {
+            border-left: 2px solid white;
+            padding: 4px;
+        }
+
+        .secound {
+            border-bottom: 2px solid white;
+        }
+
+        .final-row a {
+            color: white;
+        }
+
+        .final-row a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .title {
+            text-shadow: 2px 2px 3px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="photoss/workk.png" alt="logo" class="img-fluid  logoo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Normal links -->
+                    <li class="nav-item"><a class="nav-link" href="project 1.html">Home</a></li>
+                    <!-- Dropdowns -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Find Job</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="project 2.html">Job Listing</a></li>
+                            <li><a class="dropdown-item" href="project 3.html">Job Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Employers</a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="project 4.html">Employers List</a></li>
+                            <li><a class="dropdown-item" href="project 5.html">Employers Single</a></li>
+                            <li><a class="dropdown-item" href="project 6.html">Faq's</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Candidates</a>
+                        <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                            <li><a class="dropdown-item" href="project 7.html">Candidates List</a></li>
+                            <li><a class="dropdown-item" href="project 8.html">Candidates Single</a></li>
+                            <li><a class="dropdown-item" href="project 9.html">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="project 10.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="project 11.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="project 12.html"> Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 13.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project 14.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header-part -->
+    <section>
+        <div class="container-fluid company">
+            <div class="row">
+                <h1 class="text-center text-light head-text" data-aos="fade-up" data-aos-delay="200">Companies For Job
+                </h1>
+                <div class="px-5">
+                    <div class="input-group mb-3 mt-5">
+                        <span class="input-group-text p-3" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search to find job ..." data-aos="fade-up"
+                            data-aos-delay="300">
+                        <button class="btn btn-primary" type="button" data-aos="fade-up" data-aos-delay="300">Find
+                            Job</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary mb-5 mt-3 px-5 " data-aos="fade-up" data-aos-delay="400"> Sign in</a>
+                <a href="#" class="btn btn-primary mb-5 mt-3 px-5 " data-aos="fade-up" data-aos-delay="500"> Share</a>
+
+
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <!-- body-part -->
+    <section>
+        <div class="container jobs">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card shadow mx-auto text-light mb-3" data-aos="flip-right" data-aos-delay="300">
+                        <div class="card-body text-center">
+                            <img src="photoss/royal.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Royal Company</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mx-auto text-light mb-3" data-aos="flip-right" data-aos-delay="300">
+                        <div class="card-body text-center">
+                            <img src="photoss/images (1).png" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Dell Company</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">IT</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shadow mx-auto text-light mb-3" data-aos="flip-right" data-aos-delay="300">
+                        <div class="card-body text-center">
+                            <img src="photoss/pop2.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Chanel Company</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Designer</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">USA</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img src="photoss/pop3.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Name Company</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/apple.jfif" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Apple Company</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">IT Team</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">USA</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/share.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3"> Share Case</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/pop5.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Markal</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/pop1.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Khodro</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Eng-Car</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/pop4.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Toyota</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">En-Car</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card shadow mx-auto text-light mb-3" data-aos="flip-right" data-aos-delay="300">
+                        <div class="card-body text-center">
+                            <img src="photoss/pop1.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Coca-cola</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">USA</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/ac.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Sony</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Web developer</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">Londan</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mx-auto text-light mb-3">
+                        <div class="card-body text-center" data-aos="flip-right" data-aos-delay="300">
+                            <img src="photoss/one.jpg" alt="Profile" class="rounded-circle mb-3"
+                                style="width: 100px; height: 100px; margin: auto;" />
+                            <h4 class="h4 text-center mb-3">Samsong</h4>
+
+                            <div class="row text-center g-3 mb-3">
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="icon-label mt-1">Accounting</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column align-items-center">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span class="icon-label mt-1">UK</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning me-1"></i>
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-sm" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- footer-part -->
+    <section>
+        <div class="container-fluid footer">
+            <h2 class="text-center text-light py-5 title" data-aos="fade-up" data-aos-delay="200"> <i
+                    class="fas fa-globe"></i>Join Us Wherever You Are </h2>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 1.html"> Home</a>
+                    <a class="d-block" href="project 2.html"> Job List</a>
+                    <a class="d-block" href="project 3.html">Job Single </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 4.html">Employers List </a>
+                    <a class="d-block" href="project 5.html">Employers Single </a>
+                    <a class="d-block" href="project 6.html">Faq's</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 7.html">Candidates List</a>
+                    <a class="d-block" href="project 8.html">Candidates Single </a>
+                    <a class="d-block" href="project 9.html">About</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 10.html"> Blog</a>
+                    <a class="d-block" href="project 11.html">Blog Details </a>
+                    <a class="d-block" href="project 12.html">Terms </a>
+
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Pages</h4>
+                    <a class="d-block" href="project 13.html">Pricing</a>
+                    <a class="d-block" href="project 14.html">Contact</a>
+                    <a href="#"> <i class="fa fa-phone"></i> Contact Us </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-4">
+                    <h4>Contact</h4>
+                    <a class="d-block" href="#"><i class="fa fa-envelope"></i> Email Us</a>
+                    <a class="d-block" href="#"><i class="fa fa-map-marker-alt"></i> Location</a>
+                    <a class="d-block" href="#"><i class="fab fa-apple"></i>Download on the apple store </a>
+                </div>
+            </div>
+            <div class="row final-row">
+                <div class="secound"></div>
+                <div class="col-8">
+                    <p class="mt-3 text-light"> &copy; 2025 Work_Match Designed By " Asma Sadat Zubairi_Frontend
+                        Developer ". </p>
+                </div>
+                <div class="col-4">
+                    <a href="#"> <i class="fab fa-linkedin mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-instagram mt-3 m-3"></i></a>
+                    <a href="#"> <i class="fab fa-facebook  mt-3 m-3"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
